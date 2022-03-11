@@ -10,3 +10,4 @@ This project acts as a react boilerplate for any project.
 4. Supports both components
    - React Bootstrap
    - Material UI (MUI React)
+5. React router along with bootstrap router
