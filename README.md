@@ -11,3 +11,5 @@ This project acts as a react boilerplate for any project.
    - React Bootstrap
    - Material UI (MUI React)
 5. React router along with bootstrap router
+6. Redux middleware for store management
+7. Node JS with express setup
