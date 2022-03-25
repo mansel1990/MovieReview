@@ -1,25 +1,13 @@
 import express from "express";
+import {
+  getProductById,
+  getProducts,
+} from "../controllers/ProductController.js";
 
 const router = express.Router();
 
-const products = [
-  {
-    brand: "Apple",
-    product: "Phone",
-  },
-  {
-    brand: "Apple",
-    product: "Laptop",
-  },
-];
+router.route("/").get(getProducts);
 
-router.get("/", (req, res) => {
-  res.json(products);
-});
-
-router.get("/:id", (req, res) => {
-  const id = req.params.id;
-  id == 1 ? res.json(products[0]) : res.json([]);
-});
+router.route("/:id").get(getProductById);
 
 export default router;

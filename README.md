@@ -13,3 +13,4 @@ This project acts as a react boilerplate for any project.
 5. React router along with bootstrap router
 6. Redux middleware for store management
 7. Node JS with express setup
+8. Node JS user login with encrypted password and JWT token response
