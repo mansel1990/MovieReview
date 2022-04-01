@@ -14,3 +14,4 @@ This project acts as a react boilerplate for any project.
 6. Redux middleware for store management
 7. Node JS with express setup
 8. Node JS user login with encrypted password and JWT token response
+9. User Register, login and Profile update screens on React frontend
