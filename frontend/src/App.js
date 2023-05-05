@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "./components/Footer";
 import Header from "./components/Header";
 
 import { Container } from "react-bootstrap";
@@ -25,7 +24,6 @@ const App = () => {
           </Routes>
         </Container>
       </main>
-      <Footer />
     </Router>
   );
 };
