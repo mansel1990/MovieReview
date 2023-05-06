@@ -15,7 +15,7 @@ const Cards = ({ media, mediaType, isLarge }) => {
               ? generateImageUrl(media.poster_path, ImageSizes.poster)
               : generateImageUrl(media.backdrop_path, ImageSizes.card)
           }
-          alt={media.original_title}
+          alt={media.title}
         />
         <div className="media-card__cover">
           <div className="media-card__name">

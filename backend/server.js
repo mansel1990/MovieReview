@@ -2,7 +2,7 @@ import express from "express";
 import dotenv from "dotenv";
 import colors from "colors";
 
-import productRoutes from "./routes/ProductRoutes.js";
+import movieRoutes from "./routes/MovieRoutes.js";
 import userRoutes from "./routes/UserRoutes.js";
 import { errorHandler, notFound } from "./middleware/ErrorMiddleware.js";
 
@@ -12,7 +12,7 @@ const app = express();
 
 app.use(express.json());
 
-app.use("/api/products", productRoutes);
+app.use("/api/movies", movieRoutes);
 app.use("/api/users", userRoutes);
 
 app.use(notFound);

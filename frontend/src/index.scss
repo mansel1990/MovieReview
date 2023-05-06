@@ -2,6 +2,11 @@
 @import "./scss/media-slider";
 @import "./scss/banner";
 @import "./scss/header";
+@import "./scss/dotted-loader";
+
+:root {
+  --primary-red: #bd1e33;
+}
 
 main {
   min-height: 100vh;
