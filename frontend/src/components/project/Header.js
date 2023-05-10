@@ -4,8 +4,8 @@ import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 
 import { useDispatch, useSelector } from "react-redux";
-import { logout } from "../actions/userAction";
-import redIcon from "../images/SeaWitchRed.svg";
+import { logout } from "../../actions/userAction";
+import redIcon from "../../images/SeaWitchRed.svg";
 
 const Header = () => {
   const [floating, setFloating] = useState(false);

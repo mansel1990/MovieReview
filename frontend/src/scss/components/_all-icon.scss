@@ -1,0 +1,88 @@
+.heart-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  padding: 10px;
+  transition: border-color 0.3s ease;
+  margin: 0 1rem;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  animation: pulse-small-heart 0.5s ease-in-out;
+}
+
+.heart-icon:hover {
+  border-color: #999;
+}
+
+.heart-icon.liked {
+  border-color: red;
+  animation: pulse-heart 0.5s ease-in-out;
+}
+
+.like-icon {
+  transition: border-color 0.3s ease;
+  animation: pulse-small-heart 0.5s ease-in-out;
+}
+.like-icon.liked {
+  border-color: red;
+  animation: pulse-heart 0.5s ease-in-out;
+}
+
+.dislike-icon {
+  transition: border-color 0.3s ease;
+  animation: pulse-small-heart 0.5s ease-in-out;
+}
+.dislike-icon.disLiked {
+  border-color: red;
+  animation: pulse-heart 0.5s ease-in-out;
+}
+
+.wish-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  padding: 10px;
+  transition: border-color 0.3s ease;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  animation: pulse-small-heart 0.5s ease-in-out;
+}
+
+.wish-icon:hover {
+  border-color: #999;
+}
+
+.wish-icon.liked {
+  border-color: #3498db;
+  animation: pulse-heart 0.5s ease-in-out;
+}
+
+@keyframes pulse-heart {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse-small-heart {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

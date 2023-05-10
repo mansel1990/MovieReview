@@ -5,8 +5,8 @@ import Cards from "./Cards";
 import { useDispatch, useSelector } from "react-redux";
 import { getMovies } from "../actions/moviesAction";
 
-import Message from "../components/Message";
-import DottedLoader from "./DottedLoader";
+import Message from "../components/project/Message";
+import DottedLoader from "./project/DottedLoader";
 
 const Slider = ({ mediaType, title, path, params = {}, isLarge }) => {
   const dispatch = useDispatch();

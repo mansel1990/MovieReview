@@ -1,0 +1,76 @@
+.star__rating-btn {
+  margin: 1rem 0;
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  border-radius: 4px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: rgba(51, 51, 51, 0.5);
+
+  &:hover {
+    color: #000;
+    background-color: #e6e6e6;
+    transition: all 0.2s;
+  }
+}
+
+.review-container {
+  padding: 2rem 0;
+  .user-ratings {
+    padding: 0 2rem;
+  }
+  .user-review {
+    padding: 0 2rem;
+  }
+}
+
+.review {
+  margin: 1rem 0;
+  border: 1px solid #fff;
+  padding: 1rem;
+  &-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-user {
+      margin-bottom: 0px;
+    }
+  }
+  &-content {
+    margin: 5px;
+    line-height: 1.3rem;
+    font-size: 0.9rem;
+    max-height: 10rem;
+    min-height: 5rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 97%;
+  }
+  &-footer {
+    margin: 1.5rem 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    &-btn {
+      padding-top: 0px;
+      margin: 0px;
+    }
+    &-date {
+      font-size: 0.8rem;
+      font-style: italic;
+    }
+  }
+}
+
+.cloud-container {
+  margin-left: -15px;
+  margin-top: -20px;
+}

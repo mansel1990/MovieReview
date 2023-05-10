@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Button, Col, Form, Row } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
-import Loader from "../components/Loader";
-import Message from "../components/Message";
+import Loader from "../components/project/Loader";
+import Message from "../components/project/Message";
 import { getUserDetails, updateUserProfile } from "../actions/userAction";
 import { USER_UPDATE_PROFILE_RESET } from "../constants/userConstants";
 import { useNavigate } from "react-router-dom";

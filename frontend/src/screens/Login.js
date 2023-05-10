@@ -4,9 +4,9 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { LinkContainer } from "react-router-bootstrap";
 
 import { Button, Col, Form, Row, Navbar } from "react-bootstrap";
-import FormContainer from "../components/FormContainer";
-import Loader from "../components/Loader";
-import Message from "../components/Message";
+import FormContainer from "../components/project/FormContainer";
+import Loader from "../components/project/Loader";
+import Message from "../components/project/Message";
 import { login } from "../actions/userAction";
 
 const Login = () => {

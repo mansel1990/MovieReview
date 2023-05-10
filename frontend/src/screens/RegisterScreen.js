@@ -3,10 +3,10 @@ import { Button, Col, Form, Row, Navbar } from "react-bootstrap";
 import { useLocation, useNavigate } from "react-router-dom";
 import { LinkContainer } from "react-router-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
-import Loader from "../components/Loader";
-import Message from "../components/Message";
+import Loader from "../components/project/Loader";
+import Message from "../components/project/Message";
 import { register } from "../actions/userAction";
-import FormContainer from "../components/FormContainer";
+import FormContainer from "../components/project/FormContainer";
 
 const RegisterScreen = () => {
   const [email, setEmail] = useState("");

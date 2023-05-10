@@ -365,3 +365,37 @@ export const movies = {
   total_pages: 1000,
   total_results: 20000,
 };
+
+export const movieReviews = {
+  page: 1,
+  result: [
+    {
+      review_id: 1,
+      title: "Decent",
+      review: `#RESPECT#. One of the best films of Indian Cinema.......Amazing acting by Vikram Sir and Aishwarya Mam, Superb Direction..... Of course, it's......"The Mani Ratnam Effect". And most importantly.....Amazing portrayal of each character's "Emotions". Each character has its individual importance. Stop hesitating and go watch the film. FAST !!!!!!!!!!!!`,
+      rating: 6.5,
+      user_id: 1,
+      user_name: "Manish",
+      created_date: "2023/05/09",
+    },
+    {
+      review_id: 2,
+      title: "Good watch",
+      review: `Guy's they are some Non-tamil people who barking like movie is waste, boring bla bla bla.... don't bother about their reviews, go watch it family this weekend. one of the best sequels in recent time. worth for the money and time. love from Karnataka 👍🙏`,
+      rating: 9.5,
+      user_id: 1,
+      user_name: "Sanjay",
+      created_date: "2023/05/07",
+    },
+    {
+      review_id: 3,
+      title: "Amazing",
+      review: `വളരെ നല്ല സിനിമ..... Fiction ഓവർ ആക്കാതെയുള്ള റിയലിസ്റ്റിക്കായ മേക്കിങ്ങ്....Part 1 നേക്കാളും Part 2 മികച്ചു നിൽക്കുന്നു.... DOP, Editing, Colour Grade, Bgm എല്ലാം നോവലിന് വേണ്ട പോലെ തന്നെ ഒരുക്കിയിരിക്കുന്നു....പഴയ ചോള കാലഘട്ടത്തിൽ പോയി നടന്നതെല്ലാം തൊട്ടടുത്ത് നിന്ന് നേരിട്ട് കണ്ട പ്രതീതി.....A Maniratnam Film 🥰`,
+      rating: 10,
+      user_id: 1,
+      user_name: "Mithila",
+      created_date: "2023/05/10",
+    },
+  ],
+  total: 300,
+};

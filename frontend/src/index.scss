@@ -1,12 +1,22 @@
-@import "./scss/media-card";
-@import "./scss/media-slider";
-@import "./scss/banner";
-@import "./scss/header";
-@import "./scss/dotted-loader";
+$bp-largest: 75em; // 1200px
+$bp-medium: 56.25em; //900px
 
 :root {
   --primary-red: #bd1e33;
+  --score-color: #29d958;
 }
+
+@import "./scss/components/media-card";
+@import "./scss/components/media-slider";
+@import "./scss/components/banner";
+@import "./scss/components/header";
+@import "./scss/components/dotted-loader";
+@import "./scss/components/user-score";
+@import "./scss/components/all-icon";
+@import "./scss/components/rating-progress";
+
+@import "./scss/movie";
+@import "./scss/movie-review";
 
 main {
   min-height: 100vh;

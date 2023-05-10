@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import { generateImageUrl, ImageSizes } from "../utils/tmdb";
 import { movies } from "../utils/movies";
-import TextRating from "./TextRating";
+import TextRating from "./mini/TextRating";
 
 const Banner = () => {
   const [movie, setMovie] = useState({});
@@ -16,12 +16,14 @@ const Banner = () => {
   return (
     <div
       className="banner"
-      style={{
-        backgroundImage: `url(${generateImageUrl(
-          movie?.backdrop_path || "",
-          ImageSizes.backdrop
-        )})`,
-      }}
+      style={
+        movie?.backdrop_path && {
+          backgroundImage: `url(${generateImageUrl(
+            movie?.backdrop_path || "",
+            ImageSizes.backdrop
+          )})`,
+        }
+      }
     >
       <div className="banner__contents">
         <h1 className="banner__title">

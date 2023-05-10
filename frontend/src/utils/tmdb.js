@@ -9,10 +9,16 @@ export const ImageSizes = {
 };
 
 export function generateImageUrl(imagePath, size) {
-  return `${IMAGE_BASE_URL}/${size}${imagePath}`;
+  if (size && imagePath) {
+    return `${IMAGE_BASE_URL}/${size}${imagePath}`;
+  }
   // return path.join(IMAGE_BASE_URL, size, imagePath);
 }
 
 export function filterPreferredResults(results) {
   return results.filter((o) => ["movie", "tv"].includes(o.media_type));
 }
+
+export const getYear = (dateString) => {
+  return new Date(dateString).getFullYear();
+};
